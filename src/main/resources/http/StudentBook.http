@@ -1,0 +1,24 @@
+### create book
+POST localhost:8080/student_book
+Content-Type:  application/json
+
+{
+  "bookId": 1,
+  "studentId": 2,
+  "durationDay": 3
+}
+### Returning book
+PUT localhost:8080/student_book/2
+###
+### Get studenBookList
+GET localhost:8080/getStudent_Book_list
+###
+### Get studentBook by id
+GET localhost:8080/getStudent_Book_id/2
+###
+### Get Allstudent taken Book by id
+GET localhost:8080/getStudent_Book_idlist/1
+###
+### Get AllBook taken Book by id
+GET localhost:8080/getStudent_Book_idBooklist/1
+###

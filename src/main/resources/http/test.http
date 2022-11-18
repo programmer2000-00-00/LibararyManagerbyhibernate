@@ -1,0 +1,74 @@
+### create book
+POST localhost:8080/book
+Content-Type: application/json
+
+  {
+    "title": "Phyton",
+    "author": "Dastan",
+    "publishYear": 1998
+
+  }
+
+### get booklist
+GET localhost:8080/book
+###
+
+### get book by id
+GET localhost:8080/book/6
+### delete by id
+
+DELETE  localhost:8080/book/6
+###
+
+### update by id
+PUT localhost:8080/book/5
+Content-Type: application/json
+
+{
+  "title": "Ona tili",
+  "author": "Munisa",
+  "publishYear": 1998
+
+}
+### create student
+POST localhost:8080/student
+Content-Type: application/json
+
+{
+"name": "Munica",
+"surname": "Urolova",
+"phone": "939055900"
+
+
+}
+
+### get studentlist
+GET localhost:8080/student
+###
+
+### get student by id
+GET localhost:8080/student/1
+### delete by id
+
+DELETE  localhost:8080/student/2
+###
+
+### update by id
+PUT localhost:8080/student/1
+Content-Type: application/json
+
+{
+  "name": "Salomaka",
+  "surname": "Urolova",
+  "phone": "939055900"
+
+}
+### take book
+POST localhost:8080/studentBook
+Content-Type: application/json
+
+{
+  "student_id": "1",
+  "book_id": "1"
+
+}

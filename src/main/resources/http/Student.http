@@ -1,0 +1,47 @@
+### Create Student
+POST localhost:8080/student
+Content-Type:application/json
+
+{
+  "name":"Gulom",
+  "surname":"Urolov",
+  "phone":"929055905",
+  "createdDate":"2000-05-09"
+}
+### Get studentList
+GET localhost:8080/getstudentList
+### Create Student ALL
+POST localhost:8080/studentALL
+Content-Type:application/json
+
+[
+  {
+    "name":"Kamol",
+    "surname":"Urolov",
+    "phone":"929055906",
+    "createdDate":"2000-05-09"
+  },
+  {
+    "name":"Jora",
+    "surname":"Urolov",
+    "phone":"929055907",
+    "createdDate":"2000-05-09"
+  }
+]
+### Get student by id
+GET localhost:8080/studentById/6
+###
+### updated by id
+PUT localhost:8080/studentUpdatedID/1
+Content-Type:application/json
+
+{
+  "name":"Sevara",
+  "surname":"Urolova",
+  "phone":"929055906",
+  "createdDate":"2000-05-09"
+}
+### Get student by id
+DELETE localhost:8080/studentDeleteById/5
+###
+

@@ -1,0 +1,47 @@
+### Create BOOK
+POST localhost:8080/book
+Content-Type:application/json
+
+{
+"title":"Java",
+"author":"Gulom",
+"publishYear":"2022-11-11"
+}
+### Create All Book List
+
+POST localhost:8080/bookCreateALL
+Content-Type:application/json
+
+[
+{
+  "title": "Kimyo",
+  "author": "Yolchi",
+  "publishYear": "2022-11-11"
+},
+{
+  "title":"History",
+  "author":"NIlu",
+  "publishYear":"2022-11-11"
+}
+]
+
+### Get bookList
+GET localhost:8080/book_all
+
+
+### updated by id
+PUT localhost:8080/bookUpdated/1
+Content-Type:application/json
+
+{
+"title":"Spring",
+"author":"Komola",
+"publishYear":"2022-11-11"
+}
+### Get book by id
+GET localhost:8080/book_byId/5
+###
+
+### Delete book by id
+DELETE localhost:8080/book_delete/1
+###
